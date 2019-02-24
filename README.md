@@ -1,8 +1,8 @@
 # NotesKeeper-App
-In Progress
+
 An android application to Save Text Notes, Voice Notes, Photo Notes etc. with lot of Text Customization Features. Build to use Android Jetpack Components. During Google IO18 the Android team released some new libraries along with existing Android Architecture Components. This app aims to use most of AAC libraries in MVVM architecture.
 
-A simple app which saves all you notes in sqlite using Page Library. Show these notes in a Recyclerview using LiveData. Customize the notes like never before - A lot of text formatting features available . Some are :-
+A simple app which saves all you notes in sqlite using Room Library. Show these notes in a Recyclerview using LiveData. Customize the notes like never before - A lot of text formatting features available . Some are :-
 - Bold
 - Italics
 - Font Size
