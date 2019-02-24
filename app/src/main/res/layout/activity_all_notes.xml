@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.activities.AllNotesActivity">
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="24sp"-->
+        <!--android:text="AllNoteActivity"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allAlarmsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            tools:listitem="@layout/card_all_alarms">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <include
+            android:id="@+id/navigation"
+            layout="@layout/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/addAlarmCard"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--app:elevation="8dp"-->
+    <!--app:cardElevation="8dp"-->
+    <!--app:cardCornerRadius="24dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginBottom="72dp"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:padding="10dp"-->
+    <!--android:background="@drawable/grad_green"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_add_32dp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addAlarmCard"
+        android:transitionName="alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_add_32dp"
+        app:backgroundTint="@color/fabBlue"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="72dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
